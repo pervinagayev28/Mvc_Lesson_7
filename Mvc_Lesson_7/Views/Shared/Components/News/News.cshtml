@@ -1,0 +1,8 @@
+﻿@model List<String>
+
+<div class="list-group">
+    @foreach (var news in @Model)
+    {
+        @Html.Partial("_NewsItem", news)
+    }
+</div>
